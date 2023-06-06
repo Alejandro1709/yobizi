@@ -1,17 +1,33 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <Layout title='Jobizi - Conectando habilidades'>
   <div id='app'>
     <Navbar />
-    <main>Main</main>
+    <main>
+      <Hero />
+    </main>
   </div>
 </Layout>
 
 <style>
   #app {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
     margin: 32px 72px;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 0;
+  }
+  @media screen and (max-width: 768px) {
+    #app {
+      margin: 20px;
+    }
   }
 </style>
