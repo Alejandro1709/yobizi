@@ -1,3 +1,7 @@
+---
+import Footer from '../components/Footer.astro';
+---
+
 <section class='hero'>
   <div class='hero-container'>
     <img src='/computers.png' alt='computers' />
@@ -13,44 +17,7 @@
       <button>Empieza ya</button>
     </div>
   </div>
-  <div class='bott'>
-    <div class='bott-left'>
-      <ul>
-        <li>
-          <img src='/avatar1.png' alt='Avatar 1' />
-        </li>
-        <li>
-          <img src='/avatar2.png' alt='Avatar 2' />
-        </li>
-        <li>
-          <img src='/avatar3.png' alt='Avatar 3' />
-        </li>
-        <li>
-          <img src='/avatar4.png' alt='Avatar 4' />
-        </li>
-        <li>
-          <img src='/avatar5.png' alt='Avatar 5' />
-        </li>
-      </ul>
-      <p>Más de <strong>300,000</strong> personas ya se han registrado.</p>
-    </div>
-    <div class='bott-right'>
-      <ul>
-        <li>
-          <img src='/fb.svg' alt='Facebook logo' />
-        </li>
-        <li>
-          <img src='/twitt.svg' alt='Twitter logo' />
-        </li>
-        <li>
-          <img src='/link.svg' alt='Linkedin logo' />
-        </li>
-        <li>
-          <img src='/ig.svg' alt='Instagram logo' />
-        </li>
-      </ul>
-    </div>
-  </div>
+  <Footer />
 </section>
 
 <style>
@@ -97,48 +64,6 @@
     width: fit-content;
   }
 
-  .bott {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    align-self: flex-start;
-  }
-
-  .bott-left {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .bott .bott-left ul {
-    display: flex;
-    justify-self: flex-start;
-    list-style: none;
-  }
-
-  .bott .bott-left ul li:nth-child(n + 2) {
-    margin-left: -20px;
-  }
-
-  .bott .bott-left ul li img {
-    border-radius: 50%;
-    border: 1px solid white;
-  }
-
-  .bott-right {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-self: flex-end;
-  }
-
-  .bott .bott-right ul {
-    display: flex;
-    justify-self: flex-end;
-    gap: 27px;
-    list-style: none;
-  }
-
   @media screen and (max-width: 768px) {
     .hero,
     .hero-container {
@@ -179,23 +104,6 @@
       font-size: 16px;
       border-radius: 6px;
       margin-left: 0;
-    }
-
-    .bott ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      list-style: none;
-    }
-
-    .bott ul li:nth-child(n + 2) {
-      margin-left: -20px;
-    }
-
-    .bott ul li img {
-      width: 80px;
-      border-radius: 50%;
-      border: 1px solid white;
     }
   }
 </style>
