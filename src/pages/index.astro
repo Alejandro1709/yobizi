@@ -2,15 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
+import Wrapper from '../components/Wrapper';
 ---
 
 <Layout title='Jobizi - Conectando habilidades'>
-  <div id='app'>
-    <Navbar />
-    <main>
-      <Hero />
-    </main>
-  </div>
+  <Wrapper client:load>
+    <div id='app'>
+      <Navbar />
+      <main>
+        <Hero />
+      </main>
+    </div>
+  </Wrapper>
 </Layout>
 
 <style>

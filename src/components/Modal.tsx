@@ -1,6 +1,10 @@
+import { useStore } from '@nanostores/react';
+import { modalStore, toggleModal } from '../modalStore';
 import './Modal.css';
 
 function Modal() {
+  const modal = useStore(modalStore);
+
   return (
     <div className='modal'>
       <div className='modal-content'>
@@ -29,6 +33,13 @@ function Modal() {
             </div>
           </div>
           <button className='btn'>Regístrate</button>
+          <button
+            type='button'
+            className='btn'
+            onClick={() => toggleModal(false)}
+          >
+            Cerrar
+          </button>
         </form>
       </div>
     </div>

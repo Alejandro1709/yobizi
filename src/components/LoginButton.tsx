@@ -1,11 +1,8 @@
+import { toggleModal } from '../modalStore';
 import './LoginButton.css';
 
 function LoginButton() {
-  const handleClick = () => {
-    console.log('Click en el botón');
-  };
-
-  return <button onClick={handleClick}>Login</button>;
+  return <button onClick={() => toggleModal(true)}>Login</button>;
 }
 
 export default LoginButton;
