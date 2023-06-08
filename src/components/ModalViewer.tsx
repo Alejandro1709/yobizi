@@ -2,7 +2,7 @@ import { useStore } from '@nanostores/react';
 import { modalStore, toggleModal } from '../modalStore';
 import './Modal.css';
 
-function Modal() {
+function ModalViewer() {
   const modal = useStore(modalStore);
 
   return (
@@ -46,4 +46,4 @@ function Modal() {
   );
 }
 
-export default Modal;
+export default ModalViewer;

@@ -1,6 +1,6 @@
 import { modalStore } from '../modalStore';
 import { useStore } from '@nanostores/react';
-import Modal from './modal';
+import Modal from './ModalViewer';
 
 function Wrapper({ children }: { children: React.ReactNode }) {
   const modal = useStore(modalStore);
