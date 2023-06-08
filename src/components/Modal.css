@@ -1,0 +1,88 @@
+.modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(77, 100, 144, 0.63);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  align-items: center;
+  height: 644px;
+  width: 518px;
+  border-radius: 50px;
+  background-color: #173c74;
+}
+
+.modal-content img {
+  margin-top: 20px;
+  width: 320px;
+}
+
+.modal-content .social-logins {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+}
+
+.modal-content .social-logins button {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(197, 192, 192, 37);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 12px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5px;
+}
+
+.input-box {
+  background-color: white;
+  width: 90%;
+  padding: 14px;
+}
+
+.input-box:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.input-box:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: black;
+}
+
+.login-form .btn {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  background-color: var(--skyan-clr);
+}
+
+.login-form .btn:hover {
+  background-color: var(--skyan-clr-hover);
+}
