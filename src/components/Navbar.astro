@@ -1,3 +1,7 @@
+---
+import LoginButton from './LoginButton';
+---
+
 <header>
   <img id='logo' src='/logobg.png' alt='logo' />
   <nav>
@@ -7,7 +11,7 @@
       <li>Registrar</li>
       <li>Blog</li>
     </ul>
-    <button>Contáctanos</button>
+    <LoginButton client:load />
   </nav>
   <button id='toggle-btn'>Menú</button>
 </header>
@@ -45,18 +49,6 @@
 
   #toggle-btn {
     display: none;
-  }
-  button {
-    background-color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  button:hover {
-    background-color: #f3f3f3;
   }
 
   @media screen and (max-width: 768px) {
