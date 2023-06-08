@@ -2,23 +2,28 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
+import Wrapper from '../components/Wrapper';
 ---
 
 <Layout title='Jobizi - Conectando habilidades'>
-  <div id='app'>
-    <Navbar />
-    <main>
-      <Hero />
-    </main>
-  </div>
+  <Wrapper client:load>
+    <div id='app'>
+      <Navbar />
+      <main>
+        <Hero />
+      </main>
+    </div>
+  </Wrapper>
 </Layout>
 
 <style>
   #app {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 35px;
-    margin: 32px 72px;
+    height: 100vh;
+    padding: 12px;
   }
   main {
     display: flex;
@@ -27,8 +32,5 @@ import Hero from '../components/Hero.astro';
     flex: 1 0 0;
   }
   @media screen and (max-width: 768px) {
-    #app {
-      margin: 20px;
-    }
   }
 </style>

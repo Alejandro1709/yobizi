@@ -27,6 +27,7 @@ const { title } = Astro.props;
     --whales-tail-clr: #0f5887;
     --dark-imperial-blue-clr: #07446b;
     --skyan-clr: #68d2ff;
+    --skyan-clr-hover: #4fc2ff;
   }
 
   * {
@@ -38,5 +39,10 @@ const { title } = Astro.props;
     font-family: system-ui, sans-serif;
     background-color: var(--background-clr);
     color: white;
+  }
+
+  body {
+    min-height: 100vh;
+    position: relative;
   }
 </style>
